@@ -65,9 +65,9 @@
     justify-content: center;
     align-content: center;
     text-shadow: 3px 5px 4px rgb(179, 179, 194);
-
-
-
+    z-index: 99;
+    position: sticky;
+    top: 0;
 
 
 }
@@ -132,13 +132,16 @@
 }
 #shop{
     background-image:url(https://images.unsplash.com/photo-1559251606-c623743a6d76?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80); 
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
 }
 
 .row1 {
     display: flex;
     flex-wrap: wrap;
-   
-    padding: 0 0px;
+    padding: 4px 4px;
 }
 
 /* Create two equal columns that sits next to each other */
@@ -149,7 +152,7 @@
 }
 
 .column1 img {
-    margin-top: 90px;
+    margin-top: 50px;
     margin-left: 40px;
     align-self: flex-start;
     height: 460px;
@@ -197,7 +200,7 @@
 .row2 {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 4px 4px;
 }
 
 /* Create two equal columns that sits next to each other */
@@ -209,29 +212,27 @@
 .column2 img {
     margin-top: 20px;
     align-self: flex-start;
-    height: 620px;
+    height: 520px;
     width: 370px;
-
     position: relative;
 }
 
-.first {
+.first{
     display: flex;
     margin: 5px 5px;
-    padding: 4px 4px;
+    padding: 30px 4px 35px 4px;
     justify-content: center;
     align-content: center;
     font-size: 72px;
-     font-family: 'Merriweather', serif;
-    text-shadow: 8px 8px 4px rgb(249, 243, 244);
+    font-style: italic;
+    text-shadow: 3px 6px 8px rgb(243, 102, 102);
 }
-#new{
-    background-image: url(https://wallpapers.com/images/hd/white-full-screen-black-vertical-lines-ahvifhcurqea6hed.jpg);
-}
+
+
 .second {
     display: flex;
     margin: 5px 5px;
-    padding: 4px 4px;
+    padding: 30px 4px 10px 4px;
     justify-content: center;
     align-content: center;
     font-size: 72px;
@@ -331,11 +332,23 @@
     list-style-type: none;
     margin-top: 10px;
 }
+
+.link li:hover{
+    text-decoration: underline;
+}
+
 .about li {
     font-family: 'Labrada', serif;
     list-style-type: none;
     margin-top: 10px;
 }
+
+.about li:hover{
+    text-decoration: underline;
+
+}
+
+
 .sign{
     font-family: 'Labrada', serif;
     margin-top: 10px;
